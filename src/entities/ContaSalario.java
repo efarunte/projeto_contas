@@ -2,6 +2,8 @@ package entities;
 
 public class ContaSalario implements ContaBancaria {
 
+	// não implementei nenhuma diferença prática entre as contas do tipo ContaSalario e ContaPoupanca. Os métodos são idênticos.
+	
 	private Double saldo;
 
 	public ContaSalario(Double saldo) {

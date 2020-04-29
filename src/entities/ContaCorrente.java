@@ -1,9 +1,10 @@
 package entities;
 
-import services.recebeValor;
 
 public class ContaCorrente implements ContaBancaria {
 
+	// na conta do tipo ContaCorrente, é cobrada uma taxa fixa de 1.00 a cada operação de saque
+	
 	private final Double taxa = 1.00;
 
 	private Double saldo;

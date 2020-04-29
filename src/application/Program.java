@@ -28,36 +28,14 @@ public class Program {
 		// o bloco abaixo solicita e lê o valor de saldo inicial
 		System.out.println("Informe o saldo inicial: ");
 		saldoInicial = sc.nextDouble();
-
-		if (entrada == 1) {
-			ContaCorrente conta = new ContaCorrente(saldoInicial);
-		} else if (entrada == 2) {
-			ContaPoupanca conta = new ContaPoupanca(saldoInicial);
-
-		} else if (entrada == 3) {
-			ContaSalario conta = new ContaSalario(saldoInicial);
-		} else {
-			sc.close();
-			return;
-		}
 		
-		System.out.println(conta.getSaldo());
-		System.out.println("Digite o valor a ser depositado: ");
-		conta.deposito(sc.nextDouble());
-		System.out.println("Saldo atual: " + conta.getSaldo());
-		System.out.println("Digite o valor a ser sacado: ");
-		conta.saque(sc.nextDouble());
-		System.out.println("Saldo atual: " + conta.getSaldo());
-		
-		
-/*
 		// estrutura switch case para criação da conta, do tipo correspondente ao
 		// selecionado pelo usuário
 		switch (entrada) {
 		case 1:
 			// instancia na memória uma contaCorrente, do tipo ContaCorrente, com o saldo
 			// inicial indicado
-			ContaCorrente contaCorrente = new ContaCorrente(saldoInicial);
+			ContaCorrente contaCorrente = new ContaCorrente(saldoInicial); // instanciacao de um objeto da classe ContaCorrente, com o nome contaCorrente
 
 			// aqui eu fiquei enrolado, pois em cada case eu preciso dar um nome diferente
 			// ao objeto, o que me obriga
@@ -73,7 +51,7 @@ public class Program {
 			break;
 
 		case 2:
-			ContaPoupanca contaPoupanca = new ContaPoupanca(saldoInicial);
+			ContaPoupanca contaPoupanca = new ContaPoupanca(saldoInicial);  // instanciacao de um objeto da classe ContaPoupanca, com o nome contaPoupanca
 
 			System.out.println(contaPoupanca.getSaldo());
 			System.out.println("Saldo atual: " + contaPoupanca.getSaldo());
@@ -86,7 +64,7 @@ public class Program {
 			break;
 
 		case 3:
-			ContaSalario contaSalario = new ContaSalario(saldoInicial);
+			ContaSalario contaSalario = new ContaSalario(saldoInicial);   // instanciacao de um objeto da classe ContaSalario, com o nome contaSalario
 
 			System.out.println(contaSalario.getSaldo());
 			System.out.println("Saldo atual: " + contaSalario.getSaldo());
@@ -102,7 +80,7 @@ public class Program {
 			sc.close();
 			return;
 
-		}*/
+		}
 
 		sc.close();
 	}
